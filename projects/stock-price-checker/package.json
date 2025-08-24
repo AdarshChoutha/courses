@@ -1,7 +1,8 @@
 {
-	"name": "boilerplate-project-stockchecker",
-	"version": "0.0.1",
-	"description": "InfoSec project for freeCodeCamp",
+	"name": "stock-price-checker",
+	"version": "1.0.0",
+	"description": "Completed Stock Price Checker project for FreeCodeCamp Information Security curriculum.",
+	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"
 	},
@@ -17,7 +18,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/freeCodeCamp/boilerplate-project-stockchecker"
+		"url": "https://github.com/AdarshChoutha/courses-at-freeCodeCamp/tree/information-security/projects/stock-price-checker"
 	},
 	"keywords": [
 		"node",
