@@ -3,12 +3,21 @@ require('dotenv').config();
 const express     = require('express');
 const bodyParser  = require('body-parser');
 const cors        = require('cors');
+const helmet      = require('helmet');
+const mongoose    = require('mongoose');
 
+const envConfig         = require('./config/env.config');
 const apiRoutes         = require('./routes/api.js');
 const fccTestingRoutes  = require('./routes/fcctesting.js');
 const runner            = require('./test-runner');
 
 const app = express();
+// Connect to DB from env or fall back to localhost. Caller (tests) should set process.env.DB when necessary.
+const dbConnectionUri = envConfig.DB_CONNECTION_URI;
+
+app.use(helmet.frameguard({action: "sameorigin"}));
+app.use(helmet.dnsPrefetchControl({allow: false}));
+app.use(helmet.referrerPolicy({policy: "same-origin"}));
 
 app.use('/public', express.static(process.cwd() + '/public'));
 
@@ -46,20 +55,31 @@ app.use(function(req, res, next) {
     .send('Not Found');
 });
 
-//Start our server and tests!
-const listener = app.listen(process.env.PORT || 3000, function () {
-  console.log('Your app is listening on port ' + listener.address().port);
-  if(process.env.NODE_ENV==='test') {
-    console.log('Running Tests...');
-    setTimeout(function () {
-      try {
-        runner.run();
-      } catch(e) {
-        console.log('Tests are not valid:');
-        console.error(e);
-      }
-    }, 1500);
-  }
+mongoose.connect(dbConnectionUri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}).then(() => {
+  // log successful connection
+  console.log('MongoDB connected successfully');
+
+  //Start our server and tests!
+  const listener = app.listen(process.env.PORT || 3000, function () {
+    console.log('Your app is listening on port ' + listener.address().port);
+    if(process.env.NODE_ENV==='test') {
+      console.log('Running Tests...');
+      setTimeout(function () {
+        try {
+          runner.run();
+        } catch(e) {
+          console.log('Tests are not valid:');
+          console.error(e);
+        }
+      }, 1500);
+    }
+  });
+}).catch(err => {
+  // log connect errors; tests may fail later if DB not available
+  console.error('MongoDB connection error:', err && err.message ? err.message : err);
 });
 
 module.exports = app; //for testing
