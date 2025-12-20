@@ -9,22 +9,22 @@ This branch contains four assignments completed as part of the course, demonstra
 
 ### Assignments
 
-1. **[Module 2 Solution](https://github.com/AdarshChoutha/courses-at-coursera/tree/html-css-javascript-for-web-developers/mod2_solution)**
+1. **[Module 2 Solution](https://github.com/AdarshChoutha/courses/tree/coursera/html-css-javascript-for-web-developers/mod2_solution)**
    - **Description**: Static webpage demonstrating basic HTML structure and styling with CSS.
    - **Technologies Used**: HTML, CSS.
    - **How to View**: Open `index.html` in your browser.
 
-2. **[Module 3 Solution](https://github.com/AdarshChoutha/courses-at-coursera/tree/html-css-javascript-for-web-developers/mod3_solution)**
+2. **[Module 3 Solution](https://github.com/AdarshChoutha/courses/tree/coursera/html-css-javascript-for-web-developers/mod3_solution)**
    - **Description**: A more complex static webpage with additional styling and layout techniques.
    - **Technologies Used**: HTML, CSS.
    - **How to View**: Open `index.html` in your browser.
 
-3. **[Module 4 Solution](https://github.com/AdarshChoutha/courses-at-coursera/tree/html-css-javascript-for-web-developers/mod4_solution)**
+3. **[Module 4 Solution](https://github.com/AdarshChoutha/courses/tree/coursera/html-css-javascript-for-web-developers/mod4_solution)**
    - **Description**: A dynamic webpage incorporating JavaScript for interactivity.
    - **Technologies Used**: HTML, CSS, JavaScript.
    - **How to View**: Open `index.html` in your browser.
 
-4. **[Module 5 Solution](https://github.com/AdarshChoutha/courses-at-coursera/tree/html-css-javascript-for-web-developers/mod5_solution)**
+4. **[Module 5 Solution](https://github.com/AdarshChoutha/courses/tree/coursera/html-css-javascript-for-web-developers/mod5_solution)**
    - **Description**: Advanced webpage combining HTML, CSS, and JavaScript to create a fully interactive experience.
    - **Technologies Used**: HTML, CSS, JavaScript.
    - **How to View**: Open `index.html` in your browser.
@@ -39,32 +39,32 @@ This branch contains four assignments completed as part of the course, demonstra
 
 To view the projects locally, follow these steps:
 
-### Clone the Repository
+- ### Clone the Repository
 
-First, clone the repository to your local machine:
+   First, clone the repository to your local machine:
 
-```bash
-# Clone the repository
-git clone https://github.com/AdarshChoutha/courses-at-coursera.git
-```
+   ```bash
+   # Clone the repository
+   git clone https://github.com/AdarshChoutha/courses.git
+   ```
 
-### Navigate into the Repository
+- ### Navigate into the Repository
 
-Change your working directory to the cloned repository:
+   Change your working directory to the cloned repository:
 
-```bash
-# Navigate into the repository
-cd courses-at-coursera
-```
+   ```bash
+   # Navigate into the repository
+   cd courses
+   ```
 
-### Switch to a Course Branch
+- ### Switch to a Course Branch
 
-Switch to the branch corresponding to the course:
+   Switch to the branch corresponding to the course:
 
-```bash
-# Switch to a course branch
-git checkout html-css-javascript-for-web-developers
-```
+   ```bash
+   # Switch to a course branch
+   git checkout coursera/html-css-javascript-for-web-developers
+   ```
 
 
 ## Certificate of Completion
