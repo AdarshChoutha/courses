@@ -27,19 +27,19 @@ The work here demonstrates practical understanding of web security concepts, sec
 
   ### Projects
   
-   - [x] **Stock Price Checker**  
+   - [x] **[Stock Price Checker](./projects/stock-price-checker)**  
      A secure API-based application that retrieves stock price information while applying security best practices to protect requests and user data.
 
-   - [x] **Anonymous Message Board**  
+   - [x] **[Anonymous Message Board](./projects/anonymous-message-board)**  
     A message board application that allows anonymous posting while focusing on data protection, secure storage, and controlled access.
 
-   - [x] **Port Scanner**  
+   - [x] **[Port Scanner](./projects/port-scanner)**  
     A network utility built to scan open ports on a target system, providing hands-on experience with basic reconnaissance techniques.
 
-   - [ ] **SHA-1 Password Cracker**  
+   - [x] **[SHA-1 Password Cracker](./projects/sha-1-password-cracker)**  
     A project demonstrating password hashing concepts and the importance of secure credential handling by working with SHA-1 hashes.
 
-   - [ ] **Secure Real-Time Multiplayer Game**  
+   - [x] **[Secure Real-Time Multiplayer Game](./projects/secure-real-time-multiplayer-game)**  
     A real-time multiplayer application emphasizing secure communication, data validation, and protection against common attack vectors.
 
 
@@ -70,7 +70,7 @@ To view the projects locally, follow these steps:
 
 ## Certificate of Completion
 
-This course is currently in progress.
+You can view my certificate of completion for this course [here](https://www.freecodecamp.org/certification/adarsh_choutha/information-security-v7).
 
 
 ## Contact
