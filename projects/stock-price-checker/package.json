@@ -18,7 +18,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/AdarshChoutha/courses-at-freeCodeCamp/tree/information-security/projects/stock-price-checker"
+		"url": "https://github.com/AdarshChoutha/courses/tree/fcc/information-security/projects/stock-price-checker"
 	},
 	"keywords": [
 		"node",
