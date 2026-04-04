@@ -27,6 +27,7 @@ Each branch represents a specific course from a specific platform and contains t
 
 | Platform | Course | Key Skills |
 |----------|--------|------------|
+| Apollo Graphql | [Graph Developer - Professional](https://www.apollographql.com/tutorials/certifications/8b8768eb-f68c-4fab-bf05-333e17c18b38) <br/> `April 04, 2026` | `GraphQL` `Apollo Server` |
 | freeCodeCamp | [Information Security](https://www.freecodecamp.org/certification/adarsh_choutha/information-security-v7) <br/> `December 31, 2025` | `HelmetJS` `NMAP` `Python` |
 | Apollo Graphql | [Graph Developer - Associate](https://www.apollographql.com/tutorials/certifications/ed6671a8-b484-4977-bbaf-826735bdeb91) <br/> `October 31, 2025` | `GraphQL` `Apollo Server` |
 | Coursera | [HTML, CSS, and JavaScript for Web Developers](https://www.coursera.org/account/accomplishments/verify/38ZBVLNZZ3XR) <br/> `June 17, 2021` | `HTML` `CSS` `JS` |
